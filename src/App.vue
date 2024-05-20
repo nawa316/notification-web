@@ -7,7 +7,7 @@
           <h1 class="font-bold text-lg">Notification</h1>
           <span class="px-2 bg-blue-900 text-white font-semibold rounded-md text-center">{{ notRead }}</span>
         </div>
-        <span class="text-sm text-gray-500">Mark all as read</span>
+        <span class="text-sm text-gray-500" @click="notifs = []">Mark all as read</span>
       </div>
       <div v-if="isNew" class="container1">
       <NewNotification @shareData="getDataFromChild" />
